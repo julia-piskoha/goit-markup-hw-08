@@ -1,0 +1,108 @@
+.header {
+  position: relative;
+  background-color: var(--main-white-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border: 1px solid #ececec;
+}
+.header-thumb {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--total-black-color);
+  margin-right: 94px;
+}
+.logo__title {
+  color: var(--accent-color);
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+.navigation__list {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  display: none;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  transition: color 250ms var(--transform-function);
+  &.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    margin-bottom: -32px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.navigation__info {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+.post__icon,
+.tel__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.navigation__link.current {
+  color: var(--accent-color);
+}
+
+.post {
+  margin-right: 30px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-grey-color);
+  display: flex;
+  align-items: center;
+  transition: color 250ms var(--transform-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.tel {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-grey-color);
+  display: flex;
+  align-items: center;
+  transition: color 250ms var(--transform-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

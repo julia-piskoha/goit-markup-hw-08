@@ -1,0 +1,152 @@
+.portfolio {
+  background-color: var(--main-white-color);
+}
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 8px;
+  margin-bottom: 50px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+    row-gap: 15px;
+    justify-content: left;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+}
+.filter-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
+  padding: 6px 22px;
+
+  color: var(--title-text-color);
+  background-color: var(--secondary-grey-color);
+  transition: color 250ms var(--transform-function),
+    background-color 250ms var(--transform-function),
+    box-shadow 250ms var(--transform-function);
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: var(--main-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.cards {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.cards-item {
+  width: 100%;
+  text-align: left;
+
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
+  // display: flex;
+  // margin-right: 30px;
+  // margin-bottom: 30px;
+  // width: calc((100% - 60px) / 3);
+  // &:nth-child(3n) {
+  //   margin-right: 0;
+  // }
+  // &:nth-last-child(-n + 3) {
+  //   margin-bottom: 0;
+  // }
+
+  // @include tablet {
+  //   width: calc((100% - 30px) / 2);
+  // &:nth-child(2n) {
+  //   margin-right: 0;
+  // }
+
+  //   &:last-child {
+  //     margin-bottom: 0;
+  //   }
+  // }
+}
+
+.cards-link {
+  display: block;
+  transition: box-shadow 250ms var(--transform-function);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &:hover .cards-overlay,
+  &:focus .cards-overlay {
+    transform: translateY(0%);
+  }
+  @include mobile {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
+  @include tablet {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
+}
+.text-container {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
+
+  @include mobile {
+    width: 100%;
+  }
+
+  @include tablet {
+    flex-grow: 1;
+  }
+}
+
+.cards-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.cards-name {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--main-grey-color);
+  margin-top: 4px;
+}
+.cards-overlay-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.cards-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--main-white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  transform: translateY(100%);
+  transition: transform 250ms var(--transform-function);
+}

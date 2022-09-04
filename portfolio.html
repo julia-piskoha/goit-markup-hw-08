@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="navigation">
+          <a href="./index.html" class="logo link"
+            ><span class="logo__title">Web</span>Studio</a
+          >
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation__link link">Студия</a>
+            </li>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link link current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="navigation__info">
+          <a href="mailto:info@devstudio.com" class="post link"
+            ><svg class="post__icon" width="16" height="12">
+              <use href="./img/icons.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+          <a href="tel:+380961111111" class="tel link">
+            <svg class="tel__icon" width="10" height="16">
+              <use href="./img/icons.svg#icon-smartphone"></use>
+            </svg>
+            +38 096 111 11 11</a
+          >
+        </div>
+        <button type="button" class="menu-open-btn" data-menu-open>
+        <svg class="menu-btn" width="40" height="40">
+        <use href="./img/icons.svg#icon-menu_header"></use>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="portfolio section">
+        <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
+          <ul class="filter list">
+            <li class="filter-item">
+              <button type="button" class="filter-btn">Все</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filter-btn">Веб-сайты</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filter-btn">Приложения</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filter-btn">Дизайн</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filter-btn">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="cards list">
+            <li class="cards-item">
+              <a href="" class="cards-link link">
+                <div class="cards-overlay-wrap">
+                  <picture>
+                    <source
+                      srcset="./img/port1.jpg 1x, ./img/port1-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port1-tab-1x.jpg 1x,
+                        ./img/port1-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port1-mb-1x.jpg 1x,
+                        ./img/port1-mb-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/port1-mb-1x.jpg"
+                      alt="Технокряк"
+                      width="450"
+                    />
+                  </picture>
+                  <p class="cards-overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="text-container">
+                  <h2 class="cards-title">Технокряк</h2>
+                  <p class="cards-name">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a href="" class="cards-link link">
+                <div class="cards-overlay-wrap">
+                  <picture>
+                    <source
+                      srcset="./img/port2.jpg 1x, ./img/port2-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port2-tab-1x.jpg 1x,
+                        ./img/port2-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port2-mb-1x.jpg 1x,
+                        ./img/port2-mb-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/port2-mb-1x.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      width="450"
+                    />
+                  </picture>
+                  <p class="cards-overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="text-container">
+                  <h2 class="cards-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="cards-name">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a href="" class="cards-link link">
+                <div class="cards-overlay-wrap">
+                  <picture>
+                    <source
+                      srcset="./img/port3.jpg 1x, ./img/port3-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port3-tab-1x.jpg 1x,
+                        ./img/port3-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port3-mb-1x.jpg 1x,
+                        ./img/port3-mb-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/port3-mb-1x.jpg"
+                      alt="Ресторан Seafood"
+                      width="450"
+                    />
+                  </picture>
+                  <p class="cards-overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="text-container">
+                  <h2 class="cards-title">Ресторан Seafood</h2>
+                  <p class="cards-name">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a href="" class="cards-link link">
+                <div class="cards-overlay-wrap">
+                  <picture>
+                    <source
+                      srcset="./img/port4.jpg 1x, ./img/port4-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port4-tab-1x.jpg 1x,
+                        ./img/port4-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port4-mb-1x.jpg 1x,
+                        ./img/port4-mb-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/port4-mb-1x.jpg"
+                      alt="Проект Prime"
+                      width="450"
+                    />
+                  </picture>
+                  <p class="cards-overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="text-container">
+                  <h2 class="cards-title">Проект Prime</h2>
+                  <p class="cards-name">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a href="" class="cards-link link">
+                <div class="cards-overlay-wrap">
+                  <picture>
+                    <source
+                      srcset="./img/port5.jpg 1x, ./img/port5-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port5-tab-1x.jpg 1x,
+                        ./img/port5-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port5-mb-1x.jpg 1x,
+                        ./img/port5-mb-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/port5-mb-1x.jpg"
+                      alt="Проект Boxes"
+                      width="450"
+                    />
+                  </picture>
+                  <p class="cards-overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="text-container">
+                  <h2 class="cards-title">Проект Boxes</h2>
+                  <p class="cards-name">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a href="" class="cards-link link">
+                <div class="cards-overlay-wrap">
+                  <picture>
+                    <source
+                      srcset="./img/port6.jpg 1x, ./img/port6-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port6-tab-1x.jpg 1x,
+                        ./img/port6-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port6-mb-1x.jpg 1x,
+                        ./img/port6-mb-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/port6-mb-1x.jpg"
+                      alt="Inspiration has no Borders"
+                      width="450"
+                    />
+                  </picture>
+                  <p class="cards-overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="text-container">
+                  <h2 lang="en" class="cards-title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="cards-name">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a href="" class="cards-link link">
+                <div class="cards-overlay-wrap">
+                  <picture>
+                    <source
+                      srcset="./img/port7.jpg 1x, ./img/port7-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port7-tab-1x.jpg 1x,
+                        ./img/port7-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port7-mb-1x.jpg 1x,
+                        ./img/port7-mb-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/port7-mb-1x.jpg"
+                      alt="Издание Limited Edition"
+                      width="450"
+                    />
+                  </picture>
+                  <p class="cards-overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="text-container">
+                  <h2 class="cards-title">Издание Limited Edition</h2>
+                  <p class="cards-name">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a href="" class="cards-link link">
+                <div class="cards-overlay-wrap">
+                  <picture>
+                    <source
+                      srcset="./img/port8.jpg 1x, ./img/port8-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port8-tab-1x.jpg 1x,
+                        ./img/port8-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port8-mb-1x.jpg 1x,
+                        ./img/port8-mb-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/port8-mb-1x.jpg"
+                      alt="Проект LAB"
+                      width="450"
+                    />
+                  </picture>
+                  <p class="cards-overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="text-container">
+                  <h2 class="cards-title">Проект LAB</h2>
+                  <p class="cards-name">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a href="" class="cards-link link">
+                <div class="cards-overlay-wrap">
+                  <picture>
+                    <source
+                      srcset="./img/port9.jpg 1x, ./img/port9-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port9-tab-1x.jpg 1x,
+                        ./img/port9-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port9-mb-1x.jpg 1x,
+                        ./img/port9-mb-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/port9-mb-1x.jpg"
+                      alt="Growing Business"
+                      width="450"
+                    />
+                  </picture>
+                  <p class="cards-overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="text-container">
+                  <h2 lang="en" class="cards-title">Growing Business</h2>
+                  <p class="cards-name">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- <footer class="footer">
+      <div class="container footer-container">
+        <div>
+          <a href="./index.html" class="footer-logo link"
+            ><span class="logo__title">Web</span>Studio</a
+          >
+          <address class="address">
+            <ul class="address-list list">
+              <li class="address-item">
+                <a
+                  href="https://goo.gl/maps/4kPcmCdeqwpq2bxG7"
+                  class="footer-link link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address-item">
+                <a href="mailto:info@example.com" class="address-link link"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="address-item">
+                <a href="tel:+380991111111" class="footer-tel link"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-soc-wrap">
+          <strong class="footer-title">Присоединяйтесь</strong>
+          <ul class="footer-soc list">
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link link">
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link link">
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link link">
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link link">
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-form-wrap">    
+          <strong class="footer-form-title">Подпишитесь на рассылку</strong>
+          <form action="" class="footer-form">
+          <label for="footer-mail" class="footer-mail"></label>
+          <input 
+          type="email" 
+          class="form-mail" 
+          name="footer-mail"
+          id="footer-mail"
+          placeholder="E-mail">
+           <button type="submit" class="footer-btn">Подписаться
+            <svg class="footer-icon-btn" width="24" height="24">
+            <use href="./img/icons.svg#icon-send"></use>
+          </button>
+          </form>
+        </div>
+          </div>
+          </form>
+      </div>
+    </footer> -->
+  </body>
+</html>
