@@ -24,7 +24,7 @@
     <header class="header">
       <div class="container header__container">
         <nav class="navigation">
-          <a href="./index.html" class="logo link"
+          <a href="./index.html" class="logo-header link"
             ><span class="logo__title">Web</span>Studio</a
           >
           <ul class="navigation__list list">
@@ -32,9 +32,7 @@
               <a href="./index.html" class="navigation__link link">Студия</a>
             </li>
             <li class="navigation__item">
-              <a href="./portfolio.html" class="navigation__link link current"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="navigation__link link current">Портфолио</a>
             </li>
             <li class="navigation__item">
               <a href="" class="navigation__link link">Контакты</a>
@@ -44,21 +42,60 @@
         <div class="navigation__info">
           <a href="mailto:info@devstudio.com" class="post link"
             ><svg class="post__icon" width="16" height="12">
-              <use href="./img/icons.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com</a
-          >
+             <use href="./img/icons.svg#icon-envelope"></use>
+             </svg>
+            info@devstudio.com</a>
           <a href="tel:+380961111111" class="tel link">
             <svg class="tel__icon" width="10" height="16">
-              <use href="./img/icons.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11</a
-          >
+             <use href="./img/icons.svg#icon-smartphone"></use>
+             </svg>
+            +38 096 111 11 11</a>
         </div>
         <button type="button" class="menu-open-btn" data-menu-open>
         <svg class="menu-btn" width="40" height="40">
         <use href="./img/icons.svg#icon-menu_header"></use>
         </button>
+      </div>  
+      <div class="menu-mobile is-hidden" data-menu>
+        <div class="container">
+        <div class="mob-top-menu">
+        <button type="button" class="menu-close-btn" data-menu-close>
+        <svg class="menu-btn" width="40" height="40">
+        <use href="./img/icons.svg#icon-close_header"></use>
+        </button>
+        <nav class="menu-navigation">
+          <ul class="menu-navigation__list list">
+            <li class="menu-navigation__item">
+              <a href="./index.html" class="menu-navigation__link link">Студия</a>
+            </li>
+            <li class="menu-navigation__item">
+              <a href="./portfolio.html" class="menu-navigation__link link">Портфолио</a>
+            </li>
+            <li class="menu-navigation__item">
+              <a href="" class="menu-navigation__link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        </div>
+        <div class="menu-navigation__info">
+          <a href="tel:+380961111111" class="menu-tel link">+38 096 111 11 11</a>
+          <a href="mailto:info@devstudio.com" class="menu-post link">info@devstudio.com</a>
+       </div>
+       <ul class="menu-soc-list list">
+        <li>
+          <a href="" class="menu-soc-link link">Instagram</a>
+        </li>
+        <li>
+          <a href="" class="menu-soc-link link">Twitter</a>
+        </li>
+        <li>
+          <a href="" class="menu-soc-link link">Facebook</a>
+        </li>
+        <li>
+          <a href="" class="menu-soc-link link">LinkedIn</a>
+        </li>
+       </ul>
+      </div>
       </div>
     </header>
     <main>
@@ -449,7 +486,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div>
           <a href="./index.html" class="footer-logo link"
@@ -531,6 +568,6 @@
           </div>
           </form>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>
