@@ -105,12 +105,12 @@
     margin-top: 0;
     margin-left: 165px;
     margin-right: auto;
-    align-items: center;
   }
 
   @include desktop {
     margin-left: 70px;
     margin-right: auto;
+    align-items: flex-start;
   }
 }
 .footer-soc {
@@ -162,8 +162,10 @@
   margin-top: 60px;
 
   @include desktop {
+    align-items: flex-start;
     margin-left: auto;
     margin-top: 0;
+    margin-right: 0;
   }
 }
 
@@ -172,8 +174,6 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-white-color);
-  @include desktop {
-  }
 }
 .footer-form {
   display: flex;
@@ -186,11 +186,10 @@
   }
 }
 .form-mail {
-  margin-right: 10px;
   padding-left: 16px;
   min-width: 300px;
   width: 100%;
-  min-height: 50px;
+  height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--dark-grey-color);
@@ -205,10 +204,15 @@
   }
   &:focus {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  }
+  @include mobile {
+    width: 450px;
+  }
 
-    @include desktop {
-      transition: drop-shadow 250ms var(--transform-function);
-    }
+  @include desktop {
+    width: 358px;
+    margin-right: 10px;
+    transition: drop-shadow 250ms var(--transform-function);
     &:hover,
     &:focus {
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
